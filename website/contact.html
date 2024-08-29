@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Game Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cyberpunk Game Reviews</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="search">
+            <h2>Search Reviews</h2>
+            <input type="text" id="searchInput" placeholder="Search for reviews...">
+        </section>
+        <section id="reviews">
+            <h2>Game Reviews</h2>
+            <article class="review">
+                <h3>Game Title 1</h3>
+                <p>Review content for Game Title 1...</p>
+            </article>
+            <article class="review">
+                <h3>Game Title 2</h3>
+                <p>Review content for Game Title 2...</p>
+            </article>
+            <article class="review">
+                <h3>Game Title 3</h3>
+                <p>Review content for Game Title 3...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cyberpunk Game Reviews. All rights reserved.</p>
+    </footer>
+    <script>
+                document.getElementById('searchInput').addEventListener('input', function() {
+            const searchQuery = this.value.toLowerCase();
+            const reviews = document.querySelectorAll('.review');
+        
+            reviews.forEach(review => {
+                const title = review.querySelector('h3').textContent.toLowerCase();
+                const content = review.querySelector('p').textContent.toLowerCase();
+        
+                if (title.includes(searchQuery) || content.includes(searchQuery)) {
+                    review.style.display = 'block';
+                } else {
+                    review.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
