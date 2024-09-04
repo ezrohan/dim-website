@@ -1,0 +1,14 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Disallow:
+
+# Disallow web crawlers from accessing specific directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /private/
+
+# Allow web crawlers to access specific files in disallowed directories
+Allow: /admin/admin-ajax.php
+
+# Specify the location of the sitemap
+Sitemap: https://www.yoursite.com/sitemap.xml
