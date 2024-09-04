@@ -1,0 +1,180 @@
+body {
+    background-color: #0d0d0d;
+    color: #00ffcc;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ff00ff;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #ff00ff;
+    font-size: 2em;
+    border-bottom: 2px solid #00ffcc;
+    padding-bottom: 10px;
+}
+
+article {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+article h3 {
+    color: #ff00ff;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    color: #00ffcc;
+}
+/* Add this to your existing CSS */
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+}
+
+.carousel-item {
+    display: none;
+    text-align: center;
+}
+
+/* Add this to your existing CSS */
+
+.carousel-item img {
+    width: 100%;
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-radius: 10px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #00ffcc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+/* Add this to your existing CSS */
+
+#search {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #00ffcc;
+}
+
+.review {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.review h3 {
+    color: #ff00ff;
+    font-size: 1.5em;
+}
+/* Add this to your existing CSS */
+
+#search {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #00ffcc;
+}
+
+.review {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.review h3 {
+    color: #ff00ff;
+    font-size: 1.5em;
+}
